@@ -1,0 +1,210 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+/* Font */
+
+/* All */
+*{
+    font-family: "Poppins", sans-serif;
+}
+/* All */
+
+/* Color Configuration */
+:root {
+    --primary-color: #f6f8fd;
+    --secondary-color: #dc3545;
+    --color-text: #231942;
+    --navbar-color: #ffffff;
+    --navbar-color-text: #000000;
+  }
+/* Color Configuration */
+
+/* Navigation Bar (1) */
+  .navbar{
+    position: fixed;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    border-bottom: 2px solid var(--secondary-color);
+  }
+
+  .navbar.color-active {
+    background-color: var(--navbar-color);
+    padding: 20px 20px 0;
+  }
+
+  .navbar .nav-link a{
+    padding:  5px 10px 5px 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--navbar-color-text);
+  }
+
+  .navbar .nav-link a:hover{
+    color: var(--secondary-color);
+  }
+
+  .navbar .nav-link .active{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  .navbar .nav-link .active:hover{
+    color: var(--navbar-color);
+  }
+
+
+/* Navigation Bar (1) */
+
+/* Home Page (2) */
+header{
+    background: #c6ffdd; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    box-shadow: 0px 2px 4px rgba(100, 100, 2, 0.9);
+}
+
+.homepage .header-box h1{
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.homepage .header-box h1 span{
+  font-weight: 700;
+}
+
+.homepage .header-box p{
+  line-height: 2;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.homepage .header-box img{
+  width: 100%;
+}
+
+/* styles.css */
+
+@media screen and (max-width: 992px) {
+  .homepage .header-box {
+    padding-top: 8rem;
+  }
+
+  .responsive-flex-column {
+    flex-direction: column !important;
+  }
+
+  .responsive-flex-column .col-lg-6 {
+    margin-bottom: 2rem; /* Adds spacing between the image and text columns */
+  }
+}  
+/* Home Page (2) */
+
+/* Homepage Kelas (3) */
+.homepage .kelas{
+  background-color: var(--primary-color);
+  padding-button: 100px;
+}
+
+.homepage .kelas .row:nth-child(1){
+  padding-top: 150px;
+  padding-button: 100px;
+
+}
+
+.homepage .kelas .row:nth-child(1) h1,
+.homepage .kelas .row:nth-child(1) p{
+  color: var(--color-text);
+}
+/* Homepage Kelas (3) */
+
+
+/* Special Section */
+.header, .section-background {
+  background: #c6ffdd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  /* box-shadow: 0px 2px 4px rgba(100, 100, 2, 0.9); */
+  box-Shadow: 0px 2px 4px rgba(20, 20, 0, 0.1);
+}
+
+.photo-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-box {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title-text{
+  color: var(--secondary-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* Special Section */
+
+/* Project */
+
+/* Project */
+
+
+/* Footer (4) */
+/* FooterComponent.css */
+.footer {
+  background-color: rgba(250, 200, 100, 0.8);
+  padding: 20px 0;
+  box-shadow: 0px -2px 4px rgba(20, 10, 0, 0.4);
+  margin-top: auto;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  color: #333;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons a {
+  color: #333;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer .social-icons a:hover {
+  color: #d9534f;
+}
+
+.footer .copyright {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Footer (4) */
